@@ -14,6 +14,7 @@ function titleCase(str) {
                 resultArray += thisWord[j];
             }
         }
+        // After each word add a space " "
         if (i < allWords.length - 1) {
             resultArray += " ";
         }
