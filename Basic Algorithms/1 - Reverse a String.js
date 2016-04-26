@@ -3,7 +3,7 @@ function reverseString(str) {
     var splitedArr = str.split(" ");
     var revArr = splitedArr.reverse(); //Reversing the whole string first.
 
-    // Reverse every word
+    // Reverse every word //
     for (var i = 0; i < revArr.length; i++) {
         finalArr[i] = revArr[i].split("").reverse().join("");
     }
