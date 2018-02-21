@@ -23,4 +23,19 @@ function titleCase(str) {
 }
 
 // Testing...
-titleCase("this is a little tea pot") // Should return "This Is A Little Tea Pot".
+titleCase("this is a little tea pot"); // Should return "This Is A Little Tea Pot".
+
+
+function titleCaseLevel2(str) {
+
+  var strToArr = str.toLowerCase().split(" ");
+
+  var result = strToArr.map(function(val){
+    return val.replace(val.charAt(0), val.charAt(0).toUpperCase());
+  });
+
+  return result.join(" ");
+
+}
+
+titleCase("molla kuqe");
